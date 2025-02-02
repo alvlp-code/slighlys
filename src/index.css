@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;900&display=swap");
+
 *,
 *::before,
 *::after {
@@ -9,6 +10,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+    font-weight: 900;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #fafaff;
@@ -17,12 +19,15 @@ body {
 }
 
 main {
+  position: relative;
   background: #151418;
-  background-image: url('../public/blob-haikei.svg');
+  background-image: url('https://images3.alphacoders.com/135/1353838.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: auto;
+  min-height: auto; /* Ensure it covers the full viewport height */
 }
+
 
 a {
   text-decoration: none;
@@ -87,7 +92,7 @@ video {
 .PrimaryBtn {
   padding: 12px 20px;
   border: none;
-  background: rgb(57, 134, 250);
+  background: #5D8736;
   color: #f6f6f6;
 }
 
@@ -99,7 +104,7 @@ video {
 }
 
 .PrimaryBtn:hover {
-  background: rgb(18, 111, 250);
+  background: #809D3C;
 }
 
 .SecondaryBtn:hover {

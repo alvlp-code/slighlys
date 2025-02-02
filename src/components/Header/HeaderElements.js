@@ -12,20 +12,27 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(ScrollLink)`
-  color: rgb(119, 119, 121);
+  color: #A9C46C;
   display: flex;
   font-size: 1.2rem;
   align-items: center;
   height: 100%;
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 4px; /* Adjust the offset */
+  text-decoration-color: #F4FFC3; /* Initially invisible */
+
   &:hover {
     color: #f6f6f6;
+    text-decoration-color: #f6f6f6; /* Change underline color on hover */
   }
 `;
+
 export const Logo = styled('div')`
   img {
     width: 47px;
     height: 47px;
+    border-radius: 25px;
   }
 `;
 

@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
-
+/*background-image: url("https://images3.alphacoders.com/135/1353838.png");*/
 export const HeroContainer = styled.div`
   padding-bottom: 2rem;
   padding-top: 4rem;
@@ -8,8 +8,14 @@ export const HeroContainer = styled.div`
   padding-left: 1rem;
   margin-right: auto;
   margin-left: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
+  background: rgba(0, 0, 0, 0.8); 
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 220px;
+  
 
   @media (min-width: 576px) {
     max-width: 540px;
@@ -79,8 +85,10 @@ export const HeroRight = styled.div`
 `;
 
 export const Image = styled.img`
-  height: 300px;
+  height: auto;
   width: auto;
+  border-radius: 30px;
+  color: white;
 `;
 
 const ScrollAnimation = keyframes`

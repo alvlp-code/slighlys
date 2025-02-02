@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaGithub, FaWhatsapp } from "react-icons/fa";
 import styled from "@emotion/styled";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -58,20 +58,20 @@ function FixSocialIcon() {
         <ul>
           <li className="item">
             <a
-              href="https://www.linkedin.com/in/pedro-sales-muniz"
+              href="https://discord.gg/5QJGvz3uaM"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin />
+              <FaDiscord />
             </a>
           </li>
           <li className="item">
             <a
-              href="https://github.com/salesp07"
+              href="https://whatsapp.com/channel/0029VaxaWtOGOj9er4LZGj10"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaWhatsapp />
             </a>
           </li>
         </ul>

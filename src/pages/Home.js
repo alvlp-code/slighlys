@@ -11,7 +11,7 @@ function Home() {
     <>
       <Hero />
       <Projects />
-      <About />
+      
       <Contact />
       <FixSocialIcon />
       <Footer />

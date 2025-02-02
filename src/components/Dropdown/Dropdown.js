@@ -49,6 +49,8 @@ export const NavLink = styled(ScrollLink)`
   }
 `;
 
+
+
 export const NavBtn = styled.div`
   display: flex;
   justify-content: center;
@@ -66,31 +68,24 @@ function Dropdown({ isOpen, toggle }) {
           className="menu-item"
           to="projects"
         >
-          Projects
-        </NavLink>
-        <NavLink
-          onClick={toggle}
-          className="menu-item"
-          to="about"
-        >
-          About
+          Download
         </NavLink>
         <NavLink
           onClick={toggle}
           className="menu-item"
           to="contact"
         >
-          Contact
+          Play
         </NavLink>
       </NavMenu>
       <NavBtn onClick={toggle}>
         <a
           className="btn PrimaryBtn"
-          href="https://linkedin.com/in/pedro-sales-muniz"
+          href="https://discord.gg/5QJGvz3uaM"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Resume
+          Discord
         </a>
       </NavBtn>
     </SiderBar>

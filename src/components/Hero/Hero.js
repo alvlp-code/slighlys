@@ -32,7 +32,7 @@ function Hero() {
               <TypeAnimation
                 cursor={false}
                 sequence={[
-                  'Hi, I\'m Pedro.',
+                  'Slighlys Network',
                   () => setShowSubtitle(true)
                 ]}
                 speed={{ type: "keyStrokeDelayInMs", value: 150 }}
@@ -44,18 +44,17 @@ function Hero() {
                   cursor={true}
                   sequence={[
                     500,
-                    'A Full-Stack Developer.',
+                    'Join Now – Adventure Awaits!',
                     1000,
-                    'A BCIT graduate.',
-                    // 'I design and code beautifully simple things, and I love what I do.',
+                    'Play, Explore, Dominate!',
                     1000,
-                    'A problem solver.',
+                    'Your Journey Starts Here!',
                     1000,
-                    'An innovative thinker.',
+                    'Craft Your Legacy Today!',
                     1000,
                     'A....',
                     1000,
-                    'A.... cool guy?',
+                    'A.... best server?',
                     1000,
                     "Ok...",
                     1000,
@@ -63,7 +62,7 @@ function Hero() {
                     1000,
                     "Uhh...",
                     1000,
-                    "Uhh... you can scroll down to see my projects now...",
+                    "Uhh... you can scroll down to play...",
                     300,
                     () => setShowScrollDown(true),
                     1000,
@@ -92,11 +91,7 @@ function Hero() {
 
           </HeroLeft>
           <HeroRight>
-            <ScrollAnimation animateIn="fadeIn">
-              <Image
-                src="/man-svgrepo-com.svg"
-                alt="man-svgrepo"
-              />
+<ScrollAnimation animateIn="fadeIn">
             </ScrollAnimation>
           </HeroRight>
         </HeroWrapper>

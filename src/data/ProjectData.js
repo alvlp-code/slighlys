@@ -1,50 +1,32 @@
 // --------------------------------------- Project List
 export const ProjectList = [
   {
-    img: "/ykte-feature-graphic.png",
-    title: "YouKnowTheEnding",
+    img: "/java.jpg",
+    title: "Minecraft Java",
     description:
-      "A cross-platform mobile game (in closed testing) where players try to find the missing pieces of a story.",
-    tech_stack: ["React Native", "Google Cloud", "NextJs", "TailwindCSS"],
+      "Recommend Modpack Fabulously Optimized (https://modrinth.com/modpack/fabulously-optimized) version (1.21x)",
+    tech_stack: ["SKLauncher", "Windows", "macOS", "Linux"],
     github_url: "",
-    demo_url: "https://youknowtheending.net/",
+    demo_url: "https://skmedix.pl/downloads",
   },
   {
-    img: "/renr-responsive.png",
-    title: "RENR Safety App",
+    img: "/bedrock.png",
+    title: "Minecraft Bedrock/MCPE",
     description:
-      "A safety application for the Renewable Resources Dept. of BCIT",
-    tech_stack: ["React", "Firebase"],
+      "Recommend version latest",
+    tech_stack: ["Patch", "Android"],
     github_url: "",
-    demo_url: "https://renr-bcit.web.app/",
+    demo_url: "https://mcpebd.github.io/",
   },
   {
-    img: "/mymind-responsive.png",
-    title: "MyMind",
+    img: "/pojav.jpg",
+    title: "PojavLauncher",
     description:
-      "An app where users can purchase online therapy sessions and chat with their therapists.",
-    tech_stack: ["HTML", "CSS", "NodeJs", "MongoDB", "SocketIo"],
-    github_url: "https://github.com/salesp07/MyMind---Copy",
-    demo_url: "https://mymindweb.vercel.app/",
-  },
-  {
-    img: "/pokedex-responsive.png",
-    title: "Pokedex",
-    description:
-      "A pokedex app that displays pokemon data, plays OSTs and makes pokemons dance.",
-    tech_stack: ["ReactJs", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/Pokedex-ReactApp",
-    demo_url: "https://pokedex-salesp07.netlify.app/",
-  },
-  {
-    img: "/jobDetect.png",
-    title: "JobDetect",
-    description:
-      "An app to detect if a job posting is a scam or not using its description.",
-    tech_stack: ["Python", "Flask", "NodeJs", "MongoDB"],
-    github_url: "https://github.com/salesp07/JobDetectNode",
-    demo_url: "https://jobdetective.onrender.com/",
-  },
+      "PojavLauncher is a launcher that allows you to play Minecraft: Java Edition on your Mobile device!",
+    tech_stack: ["Android", "IOS"],
+    github_url: "",
+    demo_url: "https://github.com/PojavLauncherTeam/PojavLauncher",
+  }
 ];
 
 // --------------------------------------- Skills
