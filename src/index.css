@@ -21,7 +21,7 @@ body {
 main {
   position: relative;
   background: #151418;
-  background-image: url('https://images3.alphacoders.com/135/1353838.png');
+  
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -156,7 +156,6 @@ video {
 
 .SectionTitle {
   font-size: 28px;
-  color: #151418;
   font-weight: 700;
   margin-bottom: 3.5rem;
 }

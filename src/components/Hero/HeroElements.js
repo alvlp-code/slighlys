@@ -2,20 +2,16 @@ import styled, { keyframes } from "styled-components";
 import { Link as LinkScroll } from "react-scroll";
 /*background-image: url("https://images3.alphacoders.com/135/1353838.png");*/
 export const HeroContainer = styled.div`
-  padding-bottom: 2rem;
-  padding-top: 4rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 4rem 1rem 2rem 1rem;
+  margin: 0 auto;
   width: auto;
   display: flex;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.8); 
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  background-image: url("https://images3.alphacoders.com/135/1353838.png");
+
+  border-radius: 8px;
   height: 220px;
-  
 
   @media (min-width: 576px) {
     max-width: 540px;
@@ -30,6 +26,7 @@ export const HeroContainer = styled.div`
     max-width: 1000px;
   }
 `;
+
 
 export const HeroWrapper = styled.div`
   display: flex;

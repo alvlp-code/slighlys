@@ -39,7 +39,6 @@ const SocialContainer = styled.div`
 
     a {
       font-size: 2.5rem;
-      color: #151418;
       &:hover {
         color: rgb(57, 134, 250);
       }
