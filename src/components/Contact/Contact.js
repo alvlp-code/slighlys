@@ -132,8 +132,6 @@ const ServerInfo = ({ title, server, ip, copyToClipboard, showTooltip, isBedrock
           gap: "10px"
         }}
       >
-
-
         {/* IP Address */}
         <div style={{
           flex: "1",
@@ -151,8 +149,9 @@ const ServerInfo = ({ title, server, ip, copyToClipboard, showTooltip, isBedrock
             <MdContentCopy size={16} style={{ cursor: "pointer", color: "white" }}/>
           </IconButton>
         </div>
-                {/* Port (For Bedrock) - Left Side */}
-                {isBedrock && (
+
+        {/* Port (For Bedrock) - Left Side */}
+        {isBedrock && (
           <div style={{
             padding: "6px 10px",
             background: "rgba(0, 0, 0, 0.6)",
@@ -163,23 +162,79 @@ const ServerInfo = ({ title, server, ip, copyToClipboard, showTooltip, isBedrock
             <p style={{ margin: "0", fontWeight: "bold", color: "#ddd", fontSize: "14px" }}>
               port: {port}
             </p>
-            
           </div>
         )}
       </div>
 
-      {!server ? (
-        <p>Loading...</p>
-      ) : (
-        <>
-          <p><strong>MOTD:</strong> {server.motd.clean}</p>
-          <p><strong>Version:</strong> {isBedrock ? server.version.name : server.version.name_clean}</p>
-          <p><strong>Players:</strong> {server.players.online} / {server.players.max}</p>
-        </>
-      )}
+{!server || !server.online ? (
+  <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    background: "rgba(252, 252, 252, 0.2)",
+    padding: "8px 12px",
+    borderRadius: "10px",
+    boxShadow: "0 4px 8px rgba(252, 252, 252, 0.2)",
+    width: "100%",
+    margin: "auto",
+    gap: "10px"
+  }}>
+    <p
+    style={{
+      fontWeight: "bolder",
+      color: "navajowhite",
+      borderColor: "white",
+      textShadow: "0 4px 8px rgba(199, 14, 14, 0.2)",
+    }}
+    >Offline</p>
+    <a 
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "rgba(252, 252, 252, 0.2)",
+        padding: "8px 12px",
+        borderRadius: "10px",
+        boxShadow: "0 4px 8px rgba(252, 252, 252, 0.2)",
+        width: "100%",
+        margin: "auto",
+        gap: "10px"
+      }}
+      href="https://wa.me/6285161710084?text=HIDUPKAN%20SERVER!!!">
+<button
+  style={{
+    color: "white",
+    border: "2px solid white",
+    padding: "6px 10px",
+    background: "rgba(8, 252, 0, 0.6)",
+    boxShadow: "0 0 15px rgba(75, 255, 3, 0.9)", // Permanent red shadow
+    borderRadius: "8px",
+    borderColor: "lightgreen",
+    textAlign: "center",
+    minWidth: "60px",
+    cursor: "pointer"
+  }}
+>
+  HIDUPKAN SERVER
+</button>
+
+    </a>
+  </div>
+) : (
+  <>
+    <p><strong>MOTD:</strong> {server.motd ? server.motd.clean : "OFFLINE"}</p>
+    <p><strong>Version:</strong> {server.version ? (isBedrock ? server.version.name : server.version.name_clean) : "Unknown"}</p>
+    <p><strong>Players:</strong> {server.players ? `${server.players.online} / ${server.players.max}` : "N/A"}</p>
+  </>
+)}
+
+
+
     </div>
   );
 };
+
 
 
 
